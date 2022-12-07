@@ -18,7 +18,7 @@ export default function Home() {
     ${input}
     `;
 
-    const generate = async (prompt: string) => {
+    const generate = async (prompt) => {
         
         const completion = await openai.createCompletion({
             model: "text-davinci-003",
